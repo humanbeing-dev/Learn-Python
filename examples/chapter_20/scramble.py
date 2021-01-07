@@ -14,6 +14,9 @@ def scramble(seq):
         yield seq[1:] + seq[:1]
 
 
+scramble2 = lambda seq: (seq[i:] + seq[:i] for i in range(len(seq)))
+
+
 print(list(scramble("test")))
 print(list(scramble([1, 2, 3])))
 print(list(scramble((1, 2, 3))))
@@ -29,3 +32,4 @@ F = lambda seq: (seq[i:] + seq[:i] for i in range(len(seq)))
 
 print(list(F(S)))
 
+# Tester client

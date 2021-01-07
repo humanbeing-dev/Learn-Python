@@ -20,6 +20,6 @@ def permute2(seq):
                 yield seq[i:i+1] + x
 
 
-print(permute2('test'))
+a = permute2('abc')
 
-a = "test"
+
